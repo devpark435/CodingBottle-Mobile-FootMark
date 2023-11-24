@@ -9,39 +9,16 @@ import UIKit
 import SnapKit
 import Then
 
-final class BaseViewController: UIViewController {
-    
-    // MARK: - UI Components
-    
-    // MARK: - Properties
-    
-    // MARK: - Initializer
-    
+ class BaseViewController: UIViewController {
     // MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
-        setLayout()
+        setAddTarget()
     }
+     // MARK: - Methods
+     
+     private func setAddTarget() {}
 }
 
-extension BaseViewController {
-    
-    // MARK: - UI Components Property
-    
-    private func setUI() {
-        view.backgroundColor = .blue
-    }
-    
-    // MARK: - Layout Helper
-    
-    private func setLayout() {
-        
-    }
-    
-    // MARK: - Methods
-    
-    // MARK: - @objc Methods
-}
 

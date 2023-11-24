@@ -21,7 +21,8 @@ class BaseView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        setUI()
+        setLayout()
     }
     
     required init?(coder: NSCoder) {
@@ -30,17 +31,15 @@ class BaseView: UIView {
     
     // MARK: - UI Components Property
     
-    private func setUI(){
+     func setUI(){
     }
     
     
     // MARK: - Layout Helper
     
-    private func setLayout() {}
+     func setLayout() {}
     
-    // MARK: - Methods
     
-    private func setAddTarget() {}
     
     // MARK: - @objc Methods
     
